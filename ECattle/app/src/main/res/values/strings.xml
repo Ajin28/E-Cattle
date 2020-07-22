@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">E-Cattle</string>
+    <string name="image1">Cow</string>
+    <string name="user_id">"  Enter Username"</string>
+    <string name="password">"  Enter Password"</string>
+    <string name="login_button">LOGIN</string>
+    <string name="textview_or">OR</string>
+    <string name="register_button">REGISTER</string>
+    <string name="register_label">REGISTER :</string>
+    <string name="submit_button">SUBMIT</string>
+    <string name="address">Enter Address</string>
+    <string name="phone_number">Enter Phone-Number</string>
+    <string name="name_label">"  Name :"</string>
+    <string name="email_label">"  Email :"</string>
+    <string name="phone_label">"  Phone :"</string>
+    <string name="address_label">"  Address :"</string>
+    <string name="password_label">"  Password :"</string>
+    <string name="username">Enter Name</string>
+    <string name="password_r">Enter Password</string>
+    <string name="email">Enter Email</string>
+
+
+    <string-array name="CattleType">
+        <item>None</item>
+        <item>Cow</item>
+        <item>Buffalo</item>
+        <item>Pig</item>
+        <item>Goat</item>
+        <item>Sheep</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="ConditionType">
+        <item>None</item>
+        <item>Road Kill</item>
+        <item>Road Block</item>
+        <item>Injured Animal</item>
+        <item>Violent Animal</item>
+        <item>Others</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

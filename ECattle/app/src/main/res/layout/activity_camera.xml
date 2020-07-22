@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".Camera">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ffffff">
+
+        <Button
+            android:drawableLeft="@drawable/ic_action_take"
+            android:id="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Click "
+            android:onClick="takePicture"
+            android:padding="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="16dp"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:drawableLeft="@drawable/ic_action_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:onClick="deletePicture"
+            android:background="@drawable/custom_button"
+            android:padding="15dp"
+            android:text=" Delete "
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:background="@drawable/background_primary"
+        android:scrollbars="vertical" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@color/colorPrimary"
+        >
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="openMaps"
+            android:background="@drawable/custom_button"
+            android:padding="15dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="30dp"
+            android:text="submit"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+</LinearLayout>

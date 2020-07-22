@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_primary"
+    tools:context=".SigleReport">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal"
+            android:id="@+id/recyclerView"
+            android:scrollbars="horizontal"/>
+    </LinearLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginBottom="20dp"
+       android:layout_weight="1">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:scrollbars="vertical"
+           android:layout_marginTop="20dp"
+           android:paddingBottom="20dp"
+           android:layout_marginHorizontal="20dp">
+
+           <TextView
+               android:id="@+id/reportsingle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:text="ReportID:"
+               android:textColor="#000000"
+               android:textSize="20dp"
+               />
+
+           <TextView
+               android:id="@+id/animal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:text="Animal:"
+               android:textColor="#000000"
+               android:textSize="20dp"
+               />
+
+           <TextView
+               android:id="@+id/textView7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:text="Location:"
+               android:textColor="#000000"
+               android:textSize="20dp"
+               />
+
+           <TextView
+               android:id="@+id/sinLAT"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="2dp"
+               android:text="Latitude"
+               android:textColor="#000000"
+               android:textSize="20dp"
+               />
+
+           <TextView
+               android:id="@+id/sinLONG"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="2dp"
+               android:text="Longitude:"
+               android:textColor="#000000"
+               android:textSize="20dp"
+               />
+
+           <TextView
+               android:id="@+id/DES"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:text="Description:"
+               android:textColor="#000000"
+               android:textSize="20dp"
+               />
+
+
+           <Button
+               android:layout_marginTop="20dp"
+
+               android:id="@+id/button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/custom_button"
+               android:text="Accept"
+               android:onClick="opentag"
+               android:padding="15dp"
+               android:textColor="#FFFFFF"
+               android:textSize="18sp"
+               android:layout_gravity="end"
+               />
+
+       </LinearLayout>
+   </ScrollView>
+
+
+
+
+</LinearLayout>

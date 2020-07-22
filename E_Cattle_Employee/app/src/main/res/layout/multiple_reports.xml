@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/reportImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:src="@drawable/images" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+
+            android:text="ReportID:"
+            android:id="@+id/report"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+
+
+            android:id="@+id/reportID"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location -"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude:"
+
+            android:textColor="#000000"
+            android:id="@+id/latitude"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitude:"
+            android:textColor="#000000"
+            android:id="@+id/longitude"
+
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:textColor="#000000"
+            android:id="@+id/status"
+
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

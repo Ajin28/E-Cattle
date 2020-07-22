@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_primary"
+    tools:context=".Main3Activity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/putput" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:text="Employee Details"
+        android:textColor="#000000"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            android:orientation="vertical"    >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name "
+                android:textColor="#000000"
+
+                android:textSize="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+                android:text="Phone "
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:background="@drawable/custom_button"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+
+
+                android:layout_marginTop="22dp"
+                android:visibility="gone"
+
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:visibility="gone"
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:textColor="#ffffff"
+
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text=" Call Employee"
+        android:drawableLeft="@drawable/ic_action_call"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:onClick="call"
+        android:layout_marginBottom="26dp"
+
+        />
+
+</LinearLayout>

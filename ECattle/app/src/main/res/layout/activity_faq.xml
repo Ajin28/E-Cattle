@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_primary"
+    android:orientation="vertical"
+    tools:context=".FAQ">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_action_help"
+        android:text="  F.A.Q."
+        android:textColor="#000000"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/ic_action_ques"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:text="  How to make a report?" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:text='Step 1) Tap "Make a Report" button on Homepage' />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:text='Step 2) Select the type of animal and describe the contidion and hit submit' />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:text='Step 3) Tap "Send Location" button on Map-page to get your current location (same as the location of animal)' />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:text='Step 4)After getting your current location hit "Submit" button to uplad location of animal' />
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:text='Step 5)Take pictures of animal and again hit "Submit" to upload the pictures' />
+
+
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/ic_action_ques"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:text="  Do you have more Queries?" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:hint="Ask your question here"
+                android:focusableInTouchMode="true"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="end"
+                android:background="@drawable/custom_button"
+                android:padding="15dp"
+                android:text="Submit"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
